@@ -1,0 +1,20 @@
+/* body{
+    background-image: url("../images/Siteback.png");
+    background-size: cover;
+    background-blend-mode: darken;
+    
+
+} */
+
+
+
+#logo
+{
+    width: 9%;
+}
+
+#logo:hover
+{
+    width: 12%;
+    transition: 1s;
+}
