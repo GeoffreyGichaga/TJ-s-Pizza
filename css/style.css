@@ -1,20 +1,67 @@
-/* body{
-    background-image: url("../images/Siteback.png");
+body{
+    /* background-image: url("../images/Siteback.png");
     background-size: cover;
-    background-blend-mode: darken;
+    background-blend-mode: darken; */
+    background-color: black;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
     
 
-} */
+}
 
+.nav-link
+{
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+}
 
+.nav-link:hover
+{
+    color: #f5a231;
+}
 
 #logo
 {
-    width: 9%;
+    width: 10%;
+    height: 9%;
 }
 
 #logo:hover
 {
-    width: 12%;
+    width: 11%;
     transition: 1s;
+}
+
+#nav2
+{
+    display: flex;
+}
+
+
+#cart
+{
+    width: 23px;
+    height: 23px;
+}
+
+#nav2 a
+{
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+
+}
+#nav2 a:hover
+{
+    color: #f5a231;
+}
+
+
+#order
+{   
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5a231;
+    border: none;
+
+
 }
