@@ -1,18 +1,31 @@
 body{
-    /* background-image: url("../images/Siteback.png");
-    background-size: cover;
-    background-blend-mode: darken; */
-    background-color: black;
+    
+   
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
     
 
 }
+.container
+{
+    filter: brightness(100%);
+}
+
+.header
+{
+    background-image: url("../images/peter.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
 
 .nav-link
 {
     color: whitesmoke;
     font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    
 }
 
 .nav-link:hover
@@ -44,6 +57,7 @@ body{
     height: 23px;
 }
 
+
 #nav2 a
 {
     color: whitesmoke;
@@ -62,6 +76,46 @@ body{
     font-family: 'Nunito', sans-serif;
     background-color: #f5a231;
     border: none;
+    font-size: 15px;
+
+
+}
+
+
+
+/* Carousel */
+
+.car-img1
+{
+    width: 35%;
+}
+
+.car-img
+{
+    width: 48%;
+}
+
+.car-img2
+{
+    width: 44%;
+}
+
+
+.fs
+{
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+
+}
+
+
+.fs span
+{
+    color: #f5a231;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 
 
 }
