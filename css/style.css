@@ -83,22 +83,8 @@ body{
 
 
 
-/* Carousel */
+/* Hero Section */
 
-.car-img1
-{
-    width: 35%;
-}
-
-.car-img
-{
-    width: 48%;
-}
-
-.car-img2
-{
-    width: 44%;
-}
 
 
 .fs
@@ -118,4 +104,18 @@ body{
     font-weight: bold;
 
 
+}
+
+#viewM
+{
+    font-family: 'Nunito', sans-serif;
+    border: 2PX solid #f5a231;
+    background-color: transparent;
+
+}
+#viewM:hover
+{
+    box-shadow: 0px 0px 5px whitesmoke;
+    transform: translateX(20px);
+    transition: 1s;
 }
