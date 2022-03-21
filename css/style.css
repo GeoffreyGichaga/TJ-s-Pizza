@@ -212,3 +212,17 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
 }
+
+
+#credit
+{
+    font-family: 'Nunito', sans-serif;    
+    color: #f5a231;
+
+
+}
+
+#credit:hover
+{
+    color: whitesmoke;
+}
