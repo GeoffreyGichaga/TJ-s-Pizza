@@ -182,7 +182,10 @@ body{
     color: #f5a231;
 }
 
-
+.card-footer
+{
+    background-color: #f5a231;
+}
 
 
 
@@ -195,10 +198,12 @@ body{
 
 .addCartbtn
 {
-    border: 2px solid #f5a231;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
     background-color: #f5a231;
     font-family: 'Nunito', sans-serif;
+    color: black;
 
 }
 .addCartbtn:hover
@@ -207,6 +212,8 @@ body{
     background-color: black;
     outline: #f5a231;
     border: none;
+    border-radius: 2px solid;
+    padding: 10px;
     transition: 1s;
 
 }
