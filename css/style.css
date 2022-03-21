@@ -13,11 +13,43 @@ body{
 
 .header
 {
-    background-image: url("../images/peter.jpg");
+    background-image: url("../images/patrick.jpg");
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    /* background-repeat: no-repeat; */
+    /* width: 100%;
+    height: 100vh; */
 }
+
+
+
+
+
+.navbar-toggler
+{
+    color: #f5a231;
+    border: 2px solid;
+
+}
+.navbar-toggler:focus
+{
+    border: 2px solid;
+    border-width: 0px;
+
+}
+
+
+.menutog
+{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 .nav-link
@@ -86,6 +118,26 @@ body{
 /* Hero Section */
 
 
+.card
+{
+    box-shadow: 0px 0px 5px 0.9px rgb(207, 204, 204);
+    border: 2px solid #f5a231;
+    border-radius: 5px;
+}
+
+.card-title:hover
+{
+    
+    transform: translate(2px,2px);
+    transition: 1s;
+}
+.card-text
+{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
 
 .fs
 {
@@ -118,4 +170,45 @@ body{
     box-shadow: 0px 0px 5px whitesmoke;
     transform: translateX(20px);
     transition: 1s;
+}
+#next
+{
+    width: 40px;
+}
+
+.card img{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+
+
+#footer
+{
+    background-color: #1a2024;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+
+}
+#footerTitle
+{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #f5a231;
+}
+
+#footerlogo
+{
+    width: 20%;
+}
+#footer span img
+{
+    width: 25px;
+}
+
+#footertitle2
+{
+    color: #f5a231;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
