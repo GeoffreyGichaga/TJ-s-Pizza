@@ -39,3 +39,21 @@ const deliveryFee = document.getElementById("deliveryoption")
 const summaryBtn = document.getElementById("summary")
 
 
+// Display address input id user selects
+
+let displayAddressInput = ()=>
+{
+    if(deliverBtn.checked == true)
+    {
+        customerAddress.style.display = "block"
+
+    }
+    else
+    {
+        customerAddress.style.display = "none"
+
+    }    
+}
+displayAddressInput()
+
+deliverBtn.addEventListener("click",displayAddressInput)
