@@ -155,7 +155,7 @@ input:focus
     padding: 3px auto;
 }
 
-#paynow
+#summary
 {
     background-color: #f5a231;
     border: none;
@@ -163,7 +163,7 @@ input:focus
 
 }
 
-#paynow:focus
+#summaryBtn:focus
 {
     outline: 0;
     border: none;
