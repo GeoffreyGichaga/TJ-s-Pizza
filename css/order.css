@@ -13,7 +13,7 @@ body{
 }
 .header
 {
-    background-image:  url("../images/brenna.jpg");
+    background-image:  url("../images/egor");
 
 }
 
@@ -112,124 +112,61 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* Menu Curve */
-/* .position-absolute
+#PizzaName,#topping,#pizzasize,#crust
 {
-    left: 50;
-} */
-
-.menutxt
-{
+    padding: 5px 45px 5px 2px;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-
 
 }
-.menutxt:hover{
-    color: #f5a231;
-    transition: 1s;
-}
-
-#drinks:hover
-{
-    transform: rotate(30deg);
-    transition: 1s;
-}
-
-#halfpizza:hover
-{
-    transform: rotate(180deg);
-    transition: 0.9s;
-}
 
 
-
-
-
-
-
-
-/* Menu cards */
-
-
-
-
-.card
-{
-    box-shadow: 0px 0px 5px 0.9px rgb(207, 204, 204);
-}
-
-.card-title:hover
-{
-    
-    transform: translate(2px,2px);
-    transition: 1s;
-}
-.card-text
+label
 {
     font-family: 'Nunito', sans-serif;
 
-    color: #f5a231;
 }
 
-.card-footer
+::placeholder
+{
+    font-family: 'Nunito', sans-serif;
+
+}
+input[type='radio']:checked
 {
     background-color: #f5a231;
-}
-
-
-
-
-
-
-
-
-
-
-.placeorder
-{
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 5px;
-    background-color: #f5a231;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-
-}
-.placeorder:hover
-{
-    color: #f5a231;
-    background-color: black;
-    outline: #f5a231;
-    border: none;
-    border-radius: 2px solid;
-    padding: 10px;
-    transition: 1s;
-
-}
-.placeorder:focus
-{
-    background-color: black;
+    box-shadow: none;
     outline: none;
+}
+
+input[type='radio']:checked:focus
+{
+    background-color: #f5a231;
+    box-shadow: none;
+    border: none;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#location,#comment
+{
+    padding: 3px auto;
+}
+
+#paynow
+{
+    background-color: #f5a231;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#paynow:focus
+{
+    outline: 0;
     border: none;
     box-shadow: none;
+
 }
-
-
-#scooter
-{
-    width: 5%;
-}
-
-
-/* Modals */
