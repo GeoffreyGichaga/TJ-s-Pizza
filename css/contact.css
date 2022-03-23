@@ -180,6 +180,40 @@ body{
     margin-left: 40%;
     margin-top: 5%;
 }
+label
+{
+    font-family: 'Nunito', sans-serif;
+
+}
+.form-control
+{
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+.form-control:focus
+{
+    box-shadow: none;
+    border:   black;
+}
+.form-control:active
+{
+    color: black;
+}
+
+#sendbtn
+{
+    border: 2px solid #f5a231;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#sendbtn:focus
+{
+    box-shadow: none;
+}
 
 
 
