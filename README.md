@@ -26,7 +26,7 @@ The site has the the following view on a desktop mode display:
 ![part1](./images/sc4.png)
 
 ### Contact
-![part1](./images/sc6.png)
+![part1](./images/sc7.png)
 
 
 
