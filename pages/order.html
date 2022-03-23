@@ -97,7 +97,6 @@
         
     </section>
 
-
     <div class="container d-flex justify-content-center">
         <div class="card ">
             <div class="card-body">
@@ -199,7 +198,6 @@
 
                 </form>
 
-
                 <!-- Delivery or pickup  -->
                 <div id="transport" class="col-sm-4 mt-4 d-flex justify-content-start">
                     <div class="form-check">
@@ -217,7 +215,6 @@
 
 
                 </div>
-
                 <div class="col-sm-3 mt-4 d-flex">
                     <div id="address" class="col-sm-3 ">
                         <label for="text">Address:</label> <br>
@@ -235,14 +232,55 @@
 
 
                 </div>
+
+
+
+                <div class="col-sm-4 mt-4 ">
+                    <label for="text">Add More info</label> <br>
+                    <input id="comment" type="text" placeholder="Leave a Comment ...">
+
+                </div>
+
+
+
+
+                <!-- Your Bill -->
+                <div class="col-sm-8 mt-5">
+                    <div class="card p-2">
+                        <h3 class="text-center">Your Bill</h3>
+                        <hr>
+
+                        <div class="row-cols-2 d-flex justify-content-between">
+                            <div class="col-sm-4">
+                                <p id="selectedpizza"></p>
+                                <p id="selectedcrust"></p>
+                                <p id="selectedtop"></p>
+                                <p id="selectedsize"></p>
+                                <p id="mode"></p>
+
+
+                                <p class="deliveryoption">Delivery Fee</p>
+                                <p class="fw-bold">Total</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <p id="pizzaamount"></p>
+                                <p id="crustamount">Your item 1</p>
+                                <p id="topamount">Your item 1</p>
+                                <p id="sizeamount">Your item 1</p>
+                                <p id="deliveryfee"></p>
+                            </div>
+                        </div>
+
+                        <button id="paynow" class="btn btn-primary">Pay Now</button>
+
+                    </div>
+                </div>
                 
 
             </div>
         </div>
     </div>
-
-
-   
 
    
 
