@@ -172,10 +172,10 @@
 
                             <select class="form-control" name="size" id="pizzasize">
                                 <option class="p-5" selected ></option>
-                                <option value="0.25">Small</option>
-                                <option value="0.5"> Medium 
+                                <option value="1">Small</option>
+                                <option value="2"> Medium 
                                 </option>
-                                <option value="1"> Large
+                                <option value="3"> Large
                                 </option>
                                
         
@@ -217,8 +217,7 @@
                 <div class="col-sm-3 mt-4 d-flex">
                     <div id="address" class="col-sm-3 ">
                         <label for="text">Address:</label> <br>
-                        <input                     class="form-control"
-                        id="location" type="text" placeholder="Enter Location"> 
+                        <input class="form-control" id="location" type="text" placeholder="Enter Location"> 
 
                     </div>
 
@@ -246,8 +245,8 @@
 
 
                 <!-- Your Bill -->
-                <div class="col-sm-8 mt-5">
-                    <div class="card p-2">
+                <div class="col-sm-8 mt-5 d-flex justify-content-center ">
+                    <div class="card w-100 p-2">
                         <h3 class="text-center">Your Bill</h3>
                         <hr>
 
@@ -259,9 +258,9 @@
                                 <p id="selectedsize"></p>
 
                                 <p id="mode"></p>
+                                <p id="ordercomment"></p>
 
 
-                                <p class="fw-bold">Total</p>
                             </div>
 
                             <div class="col-sm-4">
