@@ -62,20 +62,19 @@ deliverBtn.addEventListener("click",displayAddressInput)
 
 const getBill = (e)=>
 {
-    if (e && e.preventDefault) { e.preventDefault(); }
-
 
 
     const pizzaValues = {1:1500,2:1900,3:1950,4:1900,5:1100,6:1700}
     const crustValues = {1:200,2:300,3:100}
     const toppingsValues = {1:200,2:200,3:100,4:150,5:80,6:30}
     
+
+    
     
 
-    function getPizza(e)
+    function getPizza()
     {
-        if (e && e.preventDefault) { e.preventDefault(); }
-
+ 
     // Get and display the selected pizza
         for(let i = 0;i<pizzaSelection.length;i++)
         {
@@ -88,6 +87,8 @@ const getBill = (e)=>
                 console.log(pizzaselects.value)
                 console.log(getPrice);
                 pizzaAmount.innerText = getPrice
+                selectPizzaArray.push(getPrice)
+
 
 
 
@@ -151,6 +152,7 @@ const getBill = (e)=>
                     console.log(getCrustPrice);
                     crustAmount.innerText = getCrustPrice
                     displayCrust.innerText = crustSelects.innerHTML
+                    selectCrustArray.push(getCrustPrice)
 
                 }
             }
@@ -171,6 +173,12 @@ const getBill = (e)=>
                     console.log(getToppingsPrice);
                     topAmount.innerText = getToppingsPrice
                     displayTop.innerText = toppingSelects.innerHTML
+
+                    selectToppingsArray.push(getToppingsPrice)
+
+
+
+
 
                 }
             }
@@ -201,13 +209,14 @@ const getBill = (e)=>
     }
     getCustomerComment()
 
-    function viewSummary()
-    {
-
-    }
+    
 
         
 }
+
+
+
+
 
 
     
