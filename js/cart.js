@@ -34,6 +34,7 @@ const sizeAmount = document.getElementById("sizeamount")
 const deliverFee = document.getElementById("deliveryfee")  
 
 const deliveryFee = document.getElementById("deliveryoption")
+const customerComment = document.getElementById("ordercomment")
 
 // Buttons
 const summaryBtn = document.getElementById("summary")
@@ -67,6 +68,10 @@ const getBill = (e)=>
     const pizzaValues = {1:1500,2:1900,3:1950,4:1900,5:1100,6:1700}
     const crustValues = {1:200,2:300,3:100}
     const toppingsValues = {1:200,2:200,3:100,4:150,5:80,6:30}
+    let thePizzaPrice;
+    let thePizzaTopping;
+    let thePizzaCrust;
+    let theSelectedSize;
     
 
     
@@ -86,8 +91,10 @@ const getBill = (e)=>
                 console.log(pizzaselects.innerHTML)
                 console.log(pizzaselects.value)
                 console.log(getPrice);
-                pizzaAmount.innerText = getPrice
-                selectPizzaArray.push(getPrice)
+                // pizzaAmount.innerText = getPrice
+                thePizzaPrice = getPrice
+
+
 
 
 
@@ -118,7 +125,7 @@ const getBill = (e)=>
                 console.log(selectedValue);
                 console.log(sizeSelects.innerHTML)
                 displaySize.innerText = sizeSelects.innerHTML
-                // console.log("new " + selectedValue);
+                theSelectedSize = selectedValue
 
             }
 
@@ -152,7 +159,10 @@ const getBill = (e)=>
                     console.log(getCrustPrice);
                     crustAmount.innerText = getCrustPrice
                     displayCrust.innerText = crustSelects.innerHTML
-                    selectCrustArray.push(getCrustPrice)
+
+                    thePizzaSize = getCrustPrice
+
+
 
                 }
             }
@@ -173,8 +183,7 @@ const getBill = (e)=>
                     console.log(getToppingsPrice);
                     topAmount.innerText = getToppingsPrice
                     displayTop.innerText = toppingSelects.innerHTML
-
-                    selectToppingsArray.push(getToppingsPrice)
+                    thePizzaTopping = getToppingsPrice
 
 
 
@@ -205,9 +214,57 @@ const getBill = (e)=>
     function getCustomerComment()
     {
         let comment = commentInput.value
-        // Append on a modal 
+        customerComment.innerText = comment
     }
     getCustomerComment()
+
+
+
+
+    function displayBill()
+    {
+
+        
+
+        if(theSelectedSize == 1)
+        {
+            sumOfPizza =  thePizzaPrice * 0.25
+           pizzaAmount.innerText = sumOfPizza
+
+        }
+        else if (theSelectedSize == 2)
+        {
+            sumOfPizza2 =  thePizzaPrice * 0.5
+            pizzaAmount.innerText = sumOfPizza2
+
+        }
+        else
+        {
+            sumOfPizza3 = thePizzaPrice * 1
+            pizzaAmount.innerText = sumOfPizza3
+
+        }
+
+
+  
+        
+
+
+        console.log(thePizzaPrice)
+        console.log(thePizzaTopping)
+        console.log(thePizzaCrust)
+        console.log(theSelectedSize);
+
+
+    }displayBill()
+
+
+
+    // 
+
+    function calcTotal()
+    {
+    }calcTotal()
 
     
 
